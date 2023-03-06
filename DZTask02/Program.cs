@@ -8,10 +8,10 @@
 
 Console.WriteLine("Максимальное и минимальное число из двух.");
 
-Console.WriteLine("Введите первое число");
+Console.WriteLine("Введите первое число:");
 int numberA = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Введите ворое число");
+Console.WriteLine("Введите ворое число:");
 int numberB = Convert.ToInt32(Console.ReadLine());
 
 if(numberA > numberB)
