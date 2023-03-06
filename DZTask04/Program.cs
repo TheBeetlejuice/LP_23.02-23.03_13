@@ -29,4 +29,4 @@ if(numberC > max)
 {
     max = numberC;
 }
-Console.WriteLine($"Максимальным числов из трёх являтся: {max}");
+Console.WriteLine($"Максимальным числом из трёх является: {max}");
