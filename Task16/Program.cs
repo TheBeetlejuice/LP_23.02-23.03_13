@@ -16,5 +16,5 @@ Console.WriteLine(SqrtNumbers(firstNumber, secondNumber) ? "Да" : "Нет");
 
 bool SqrtNumbers(int firstNum, int secondNum)
 {
-    return firstNum * firstNum == secondNum || secondNum * secondNum == firstNum;
+    return firstNum * firstNum == secondNum || secondNum * secondNum == firstNum; // || - или 
 }
