@@ -13,7 +13,12 @@ Console.Write("Введите второе чсло: ");
 int secondNumber = Convert.ToInt32(Console.ReadLine());
 
 int remainsdigits = RemainsDigits(firstNumber, secondNumber);
-Console.WriteLine(remainsdigits == 0 ? "Кратно" : $"Не кратно, остаток -> {remainsdigits}"); // тернарное оператор, вывод результати (или/или)
+
+string result = remainsdigits == 0 ? "Кратно" : $"Не кратно, остаток -> {remainsdigits}";
+
+Console.WriteLine(result);
+
+//Console.WriteLine(remainsdigits == 0 ? "Кратно" : $"Не кратно, остаток -> {remainsdigits}"); // тернарное оператор, вывод результати (или/или)
 
 int RemainsDigits(int firstNumber, int secondNumber)
 {
