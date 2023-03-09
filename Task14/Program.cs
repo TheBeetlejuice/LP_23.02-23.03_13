@@ -13,5 +13,5 @@ Console.WriteLine(Multiple(number) ? "Да" : "Нет");
 
 bool Multiple(int num)
 {
-    return number % 7 == 0 && number % 23 == 0;
+    return number % 7 == 0 && number % 23 == 0; //&& логическое и
 }
