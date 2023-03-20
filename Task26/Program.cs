@@ -14,7 +14,7 @@ Console.WriteLine($"В числе {num} содержится {countDigit} циф
 int CountDigit(int number)
 {
     int digit = 0;
-    do
+    do // сначало выполняем действие, потом проверяем
     {
         number /= 10; // number = number / 10
         digit++;
