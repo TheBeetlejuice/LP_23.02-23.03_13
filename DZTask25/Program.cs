@@ -10,6 +10,19 @@ int numberA = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите число B: ");
 int numberB = Convert.ToInt32(Console.ReadLine());
 
+int result = 1;
+if (numberB < 1)
+    Console.Write($"Число B должно быть натуральным.");
+else
+{
+    while (numberB != 0)
+    {
+        result = result * numberA;
+        numberB = numberB - 1;
+    }
+    Console.WriteLine($"Число A в натуральной степени числа B -> " + result);
+}
+
 // int expo = Expo(numberA, numberB);
 // Console.WriteLine($"Первое число {numberA} в степени второго числа {numberB} = " + expo);
 
@@ -22,17 +35,3 @@ int numberB = Convert.ToInt32(Console.ReadLine());
 //     }
 //     return result;
 // }
-
-
-int result = 1;
-if (numberB < 1)
-    Console.Write($"Число B должно быть натуральным.");
-else
-{
-    while (numberB != 0)
-    {
-        result = result * numberA;
-        numberB = numberB - 1;
-    }
-    Console.WriteLine($"Число A в натурального степени числа B -> " + result);
-}
