@@ -20,19 +20,22 @@ int[] array = new int[8];
                 int count = arr.Length;
                 for (int i = 0; i < count; i++)
                 {
-                    Console.Write($"{arr[i]}, ");
+                    if(i < arr.Length - 1) Console.Write($"{arr[i]}, ");
+                    else Console.Write($"{arr[i]} -> ");
                 }
             }
 
             void PrintFin(int[] arr)
             {
-                Console.Write($"-> [");
+                Console.Write($"[");
+                
                 int count = arr.Length;
                 for (int i = 0; i < count; i++)
                 {
-                    Console.Write($"{arr[i]},");
+                    if(i < arr.Length - 1) Console.Write($"{arr[i]}, ");
+                    else Console.Write($"{arr[i]}");
                 }
-                Console.Write($"]");
+                Console.WriteLine($"]");
             }
 
             FillArray(array);
