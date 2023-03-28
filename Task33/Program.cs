@@ -44,5 +44,5 @@ PrintArray(array);
 Console.Write("Введите число для поиска в массиве: ");
 int digit = Convert.ToInt32(Console.ReadLine());
 string output = SearchDigit(array, digit) ? "Число присутствует в массиве." 
-                                            : "Число не присутствует в массиве.";
+                                            : "Число отсутствует в массиве.";
 Console.WriteLine(output);
